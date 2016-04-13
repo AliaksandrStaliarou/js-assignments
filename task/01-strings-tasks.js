@@ -57,7 +57,7 @@ function getStringLength(value) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-    throw new Error('Not implemented');
+    return 'Hello, ' + firstName + ' ' + lastName + '!';
 }
 
 /**
@@ -86,7 +86,7 @@ function extractNameFromTemplate(value) {
  *   'cat'       => 'c'
  */
 function getFirstChar(value) {
-    throw new Error('Not implemented');
+    return value[0] ;
 }
 
 /**
@@ -198,7 +198,7 @@ function extractEmails(str) {
  *            '└┘\n'
  *
  *             '┌──────────┐\n'+
- *  (12,3) =>  '│          │\n'+
+ *  (12,3) =>  '│              │\n'+
  *             '└──────────┘\n'
  *
  */
