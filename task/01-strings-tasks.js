@@ -147,7 +147,7 @@ function removeFirstOccurrences(str, value) {
  *   '<a>' => 'a'
  */
 function unbracketTag(str) {
-    throw new Error('Not implemented');
+    return str.slice(1, -1);
 }
 
 
@@ -162,7 +162,7 @@ function unbracketTag(str) {
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
 function convertToUpperCase(str) {
-    throw new Error('Not implemented');
+    return str.toUpperCase();
 }
 
 /**
@@ -176,8 +176,9 @@ function convertToUpperCase(str) {
  *   'info@gmail.com' => ['info@gmail.com']
  */
 function extractEmails(str) {
-    throw new Error('Not implemented');
+    return '[' + str.replace(/;/g, ', ') + ']';
 }
+
 
 /**
  * Returns the string representation of rectangle with specified width and height
@@ -190,15 +191,15 @@ function extractEmails(str) {
  * @example
  *
  *            '┌────┐\n'+
- *  (6,4) =>  '│    │\n'+
- *            '│    │\n'+
+ *  (6,4) =>  '│       │\n'+
+ *            '│       │\n'+
  *            '└────┘\n'
  *
  *  (2,2) =>  '┌┐\n'+
  *            '└┘\n'
  *
  *             '┌──────────┐\n'+
- *  (12,3) =>  '│              │\n'+
+ *  (12,3) =>  '│                 │\n'+
  *             '└──────────┘\n'
  *
  */
